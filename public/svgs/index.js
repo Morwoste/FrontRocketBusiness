@@ -1,0 +1,6 @@
+export {default as LeftArrow} from './LeftArrow.svg'
+export {default as RightArrow} from './RightArrow.svg'
+export {default as Whatsapp} from './Whatsapp.svg'
+export {default as Instagram} from './Instagram.svg'
+export {default as Telegram} from './Telegram.svg'
+export {default as Marker} from './Marker.svg'

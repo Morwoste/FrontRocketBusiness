@@ -1,0 +1,52 @@
+.button {
+    width: 196px;
+    height: 43px;
+    color: #0DBC91;
+    background: transparent;
+    border: 1px solid #0DBC91;
+    border-radius: 50px;
+    border-radius: 50px;
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-left: 14px;
+    transition: 0.1s;
+}
+.button_filled {
+    border: none;
+    width: 196px;
+    height: 43px;
+    color: #fff;
+    background: #0DBC91;
+    border-radius: 50px;
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    margin-left: 14px;
+    transition: 0.1s;
+}
+.button_filled:hover {
+    background-color: #00D29F;
+    transition: 0.1s;
+}
+.button:hover {
+    background-color: #0DBC91;
+    color: #FFFFFF;
+    transition: 0.1s;
+}
+
+@media screen and (max-width: 450px) {
+    .button_filled {
+        margin-bottom: 20px;
+    }
+    .button {
+        margin-bottom: 20px;
+    }
+}

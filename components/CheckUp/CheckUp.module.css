@@ -1,0 +1,148 @@
+.block {
+    height: 440px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.wrapper {
+    margin: 100px 0;
+}
+.card_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px 0 0 5px;
+    padding-left: 65px;
+    width: 613px;
+    height: 100%;
+    background: #E2F0EF;
+    clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+}
+.card_title {
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #364844;
+    margin-bottom: 16px;
+}
+.card_check {
+    list-style-type: none; /* Прячем исходные маркеры */
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #364844;
+}
+.card_check::before {
+    color:#1FA181;
+    content: "●";
+    padding-right: 10px;
+}
+.card_price {
+    font-family: 'PT Sans Caption';
+    margin-top: 33px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #364844;
+}
+.card_old_price {
+    margin: 0 16px;
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: line-through;
+    color: #868686;
+}
+.card_image {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    width: 60%;
+    height: 100%;
+    background: url("../../public/checkup.png") no-repeat;
+    background-position: right;
+}
+.pagiWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 34px;
+}
+.pagiBlock {
+    margin: 0 36px;
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #C0C0C0;
+}
+.pagiActive {
+    color: #364844;
+}
+.pagiArrow {
+    width: auto ;
+    font-size: 30px;
+    fill: #e1e1e1;
+}
+.pagiArrow:hover{
+    fill: #0DBC91;
+}
+
+.button_wrapper{
+    display: flex;
+    margin-top: 26px;
+}
+
+@media screen and (max-width: 450px) {
+    .block {
+        display: flex;
+        height: 600px;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    .button_wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card_title {
+        padding-left: 20px;
+    }
+    .wrapper {
+        padding: 20px;
+    }
+    .card_price {
+        padding-left: 20px;
+    }
+    .card_image {
+        position: relative;
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+        height: 100%;
+        background: url("../../public/checkup.png") no-repeat center;
+        background-size: cover;
+    }
+    .card_text {
+        background: #E2F0EF;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        display: flex;
+        border-radius: 0px 0px 10px 10px;
+        width: 100%;
+        height: 100%;
+        padding: 20px 0;
+    }
+    .card_check {
+        padding-left: 20px;
+    }
+}
+

@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    max-width: 1140px;
+    min-width: 1140px;
+    background-color: transparent;
+}
+@media screen and (max-width: 450px) {
+    .container {
+        max-width: 100%;
+        min-width: 20px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,22 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.footer_media_wrapper{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 450px) {
+    .container {
+        flex-direction: column-reverse;
+        height: 100%!important;
+    }
+    .footer_media_wrapper{
+        padding: 30px 15px;
+    }
+}

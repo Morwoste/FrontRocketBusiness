@@ -1,0 +1,80 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 67px;
+}
+.left_block {
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+.contact_block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+}
+.right_block {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.text_light {
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #868686;
+}
+.icon {
+    font-size: 20px;
+}
+.address {
+    display: flex;
+    margin: 0 20px;
+    width: auto;
+}
+.about_logo {
+    color: #0DBC91;
+    font-weight: bold;
+    font-size: 27px;
+}
+.phone {
+    margin: 0 20px;
+    width: 100%;
+}
+
+@media screen and (max-width: 450px) {
+    .phone_icon {
+        display: none;
+    }
+    .phone {
+        font-size: 18px;
+        margin: 0;
+    }
+    .address {
+        font-size: 12px;
+        margin: 0;
+    }
+    .text_light {
+        display: none;
+    }
+    .about_logo {
+        margin-left: 20px;
+    }
+    .right_block {
+        margin-right: 20px;
+        flex-direction: column-reverse;
+        width: auto;
+        justify-content: center;
+        align-items: end;
+    }
+    .display_none{
+        display: none;
+    }
+}
+
